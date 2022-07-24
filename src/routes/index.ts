@@ -1,10 +1,12 @@
-import { Router, Request, Response } from "express";
+import express, { Router, Request, Response } from "express";
 import session_leads from "./api/session-leads.routes";
 import sessions from "./api/sessions.routes";
 import studemts_sessions from "./api/studemts_sessions.routes";
 import students from "./api/students.routes";
 
 const routes = Router();
+
+sessions.use(express.json());
 
 routes.get("/", (req: Request, res: Response) => {
   res.json({

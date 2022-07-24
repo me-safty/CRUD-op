@@ -1,4 +1,4 @@
 CREATE TABLE session_leads (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(50) NOT NULL,
+  name VARCHAR(50) NOT NULL
 );

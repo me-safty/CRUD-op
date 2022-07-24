@@ -6,7 +6,9 @@
   "scripts": {
     "build": "npx tsc",
     "start": "npm run build && node build/.",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "run": "chmod +x init.cmd && init.cmd",
+    "run:t": "chmod +x test.cmd && test.cmd"
   },
   "repository": {
     "type": "git",
